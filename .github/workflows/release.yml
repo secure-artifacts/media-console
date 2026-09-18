@@ -34,7 +34,7 @@ jobs:
           --hidden-import yt_dlp --hidden-import googleapiclient
           "媒体播放器_最终版_串联播放_录音版.py"
       - name: Attest Build Provenance
-        uses: actions/attest-build-provenance@v2
+        uses: actions/attest-build-provenance@v4
         with:
           subject-path: dist/MediaConsole.exe
       - name: Create Release
